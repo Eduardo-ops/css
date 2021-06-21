@@ -26,5 +26,31 @@
         -->
         <p class="verde"> Parágrafo 2 da página.</p>
 
+        <!-- 
+            Uma lista para demonstrar o comportamento do estilo css configurado para formatar apenas
+            os links de dentro de li, que no caso, são filhos de Li. 
+        -->
+        <ul>
+            <li>
+                <a href="">Link 1</a>
+            </li>
+            <li>
+                <a href="">Link 2</a>
+            </li>
+            <li>
+                <span>
+                    <a href="">Link 3</a> <!-- Nesse link, não terá o estilo css, pois está sendo filho de span ai invés de li. -->
+                </span>
+            </li>
+            <li>
+                <a href="">Link 4</a>
+            </li>
+        </ul>
+
+        <!-- 
+            Um link sem herança alguma, demonstrando que não há nenhum css em si. 
+        -->
+        <a href="">Link que não faz parte do li</a>
+
     </body>
 </html>

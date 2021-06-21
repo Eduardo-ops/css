@@ -68,3 +68,12 @@ seletor irmão adjacente
 h2+p{
     color: red;
 }
+
+/* 
+Seletor irmão geral, seleciona um elemento que é um irmão de outro, mas não necessariamente precise ser o elemento
+diretamente precedente.
+Como no exemplo abaixo, caso exista mais de um elemento <p> irmãos de <h3>, teremos a regra aplicada aos dois.
+*/
+h3~p{
+    color: blue;
+}

@@ -43,7 +43,7 @@ Nunca é usado mais de uma vez com o mesmo nome na mesma página e em outro elem
 /* 
 Seletor que seleciona um elemento que é filho de outro, no exemplo abaixo,
 temos "a" que é filho de li, assim, é adicionado uma classe de estilo em todos
-a dentro de li, mas não outros elementos da página.
+"a" dentro de li, mas não outros elementos da página.
 Muito indicado para aplicações em menus.
 */
 li>a{

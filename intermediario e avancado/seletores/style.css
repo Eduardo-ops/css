@@ -1,0 +1,41 @@
+/* 
+Seletor universal, permite forma todos os elementos da página,
+bastante utilziado para realizar formtações padrões iniciais.
+ */
+*{
+    padding: 0;
+    margin:0
+}
+
+/* 
+Seletor que seleciona todos os elementos títulos, h1, h2 e outros. 
+*/
+h1{
+    color: blue;
+}
+
+/* 
+Seletor no qual, seleciona todo elemento que contem atributo class com o valor depois do ponto.
+Nesse exemplo, ele vai selecionar qualquer elemento que tiver o valor igual a "verde" e aplicar o estilo. 
+*/
+
+/* .verde{
+    color: yellow;
+} */
+
+/* 
+Abaixo no exemplo, temos a classe verde aplicada e direcionada somente a parágrafos, caso tentamos usa-lá
+em outra tag, não será permitido. 
+*/
+p.verde{
+    color: green;
+}
+
+/* 
+Seletor cujo atributo id tem o valor referenciado após o símbolo de jogo da cercilha, 
+é usado sempre que formos padronizar uma formatação e estilo para um único elemento html.
+Nunca é usado mais de uma vez com o mesmo nome na mesma página e em outro elemento. 
+*/
+#cabecalho{
+    border: 1px solid blue;
+}

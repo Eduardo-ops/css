@@ -3,8 +3,8 @@ Seletor universal, permite forma todos os elementos da página,
 bastante utilziado para realizar formtações padrões iniciais.
  */
 *{
-    padding: 0;
-    margin:0
+    padding: 10;
+    margin:10;
 }
 
 /* 
@@ -56,8 +56,15 @@ Seletor descendente seleciona o elemento descendente, ou seuja, aquele que vem l
 No exemplo abaixo, podemos ver que qualquer elemento "<a>" dentro de "<div>", recebem o estilo css, mesmo se houver
 outros elementos aninhado entre eles. 
 */
-
 div a {
     color: yellowgreen;
     text-decoration: none;
+}
+
+/* 
+Seletor que possibilita que o primeiro elemento próximo de <h1>, seja aplicado o css, sendo assim,
+seletor irmão adjacente 
+*/
+h2+p{
+    color: red;
 }

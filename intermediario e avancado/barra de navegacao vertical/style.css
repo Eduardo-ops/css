@@ -12,6 +12,7 @@ ul{
 Elementos de lista 
 */
 
+/* Formatando os links dentro de ul apenas. */
 ul a{
     width: 200px;
     height: 40px;
@@ -23,6 +24,7 @@ ul a{
     line-height: 40px; /* Utilizado para especificar o espaçamento entre linhas de um texto. */
 }
 
+/* Quando passarmos o mouse em cima do link, terá uma movimentação de background e cor do texto, dando o efeito. */
 a:hover{
     background-position: right bottom;
     color: #fff;

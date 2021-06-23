@@ -3,16 +3,27 @@
 Estrutura de navegação 
 */
 ul{
-    list-style-type: none; /* Remove o meio-ponto da lista, e define se é uma lista ordenada ou não ordenada. */
     margin: 0;
     padding: 0;
+    list-style-type: none; /* Remove o meio-ponto da lista, e define se é uma lista ordenada ou não ordenada. */
 }
 
 /* 
 Elementos de lista 
 */
 
-li{
-    padding: 10px 15px;
-    background: url(../imagens/seta.png) no-repeat left center;
+ul a{
+    width: 200px;
+    height: 40px;
+    display: block; /* Tornando o elemento um display-block, normalmente vem como inline-block */
+    background: url(../imagens/menu.png) no-repeat left center;
+    text-decoration: none;
+    color: #000;
+    text-indent: 40px; /* Usado para especificar o recuo(espaço vazio) antes de linhas de texto em um bloco.  */
+    line-height: 40px; /* Utilizado para especificar o espaçamento entre linhas de um texto. */
+}
+
+a:hover{
+    background-position: right bottom;
+    color: #fff;
 }

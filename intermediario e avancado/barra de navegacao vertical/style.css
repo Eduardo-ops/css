@@ -3,8 +3,16 @@
 Estrutura de navegação 
 */
 ul{
-    border: 1px solid red;
     list-style-type: none; /* Remove o meio-ponto da lista, e define se é uma lista ordenada ou não ordenada. */
     margin: 0;
     padding: 0;
+}
+
+/* 
+Elementos de lista 
+*/
+
+li{
+    border: 1px solid red;
+    padding: 15px
 }

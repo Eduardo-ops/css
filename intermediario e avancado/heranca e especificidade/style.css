@@ -1,4 +1,74 @@
+
+/* ------------ HERANÇA ------------ */
+
+/* 
+Aqui temos uma cor definida na classe "pagina" e uma borda no body, nesse caso, todos elementos dentro da div no html terá a cor vermelha, porém,
+a borda ficará em volta do body em si, não fazendo com que cada elemento tenha uma borda.
+*/
 body{
-    color: red;
-    border: 1px solid blue
+    border: 1px solid blue;
 }
+
+/* 
+A cor vermelha se aplica nos elementos <h2> e <p>, pois herdam da classe que o pai tem por estilo.
+Assim, temos o conceito de herança, também chamamos de folha de estilo em cascata. 
+*/
+.pagina{
+    color: red;
+}
+
+/* ------------ ESPECIFICIDADE ------------ */
+
+/* 
+No caso de dois seletores iguais, sempre o último que será aplicado a regra, como vemos no exemplo abaixo: 
+*/
+p{
+    color: blue;
+}
+
+p{
+    color: yellow;
+}
+
+/* 
+Caso haja um "!important na frente da propriedade, passa a valer a regra desse seletor, pois ele contém uma prioridade." 
+*/
+h2{
+    color: red !important;
+}
+
+h2{
+    color: black;
+}
+
+/* 
+Se um seletor for mais específico que o outro, a regra mais específica será aplicada (terá precedência sobre regras mais gerais.),
+No exemplo abaixo, o seletor específico é o <h2>, e ele tem a regra aplicada, mesmo o geral em "*" tendo uma cor predefinida.
+Assim, o <h2> e, específico tem a regra aplicada sobre o geral "*".
+*/
+
+*{
+    color: red;
+}
+
+h2{/* 3 */
+    color: blue;
+}
+
+
+/* 
+Aqui temos mais seletores ainda mais específicos, e com isso, temos o resultado de <h2> amarelo, pois o 
+id tem prioridade sobre a classe. 
+*/
+h2#amarelo{/* 1 */
+    color: yellow;
+}
+
+h2.verde{/* 2 */
+    color: green;
+}
+
+/* 
+Acima nos elementos <h2>, temos um número ao lado da abertura da estrutura, indicando qual irá ser aplicada a regra primeiro que o outro,
+caso um deles deixe de existir no código. 
+*/

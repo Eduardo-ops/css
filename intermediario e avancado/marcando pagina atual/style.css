@@ -17,7 +17,7 @@ ul a{
     width: 200px;
     height: 40px;
     display: block; /* Tornando o elemento um display-block, normalmente vem como inline-block */
-    background: url(../imagens/menu.png) no-repeat left center;
+    background: #F7b600 url(../imagens/arquivo-errado.png) no-repeat left center; /* Cor adicionada para que se não carregar a imagem, carregue uma cor de fundo. */
     text-decoration: none;
     color: #000;
     text-indent: 40px; /* Usado para especificar o recuo(espaço vazio) antes de linhas de texto em um bloco.  */
@@ -25,7 +25,8 @@ ul a{
 }
 
 /* Quando passarmos o mouse em cima do link, terá uma movimentação de background e cor do texto, dando o efeito. */
-a:hover{
+a:hover, .selecionado a{
     background-position: right bottom;
+    background-color: #f99200; /* Caso a imagem não carregue, o efeito de cor ao passar o mouse em cima acontecerá por um background-color. */
     color: #fff;
 }

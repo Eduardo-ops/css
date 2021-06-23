@@ -25,8 +25,23 @@ ul a{
 }
 
 /* Quando passarmos o mouse em cima do link, terá uma movimentação de background e cor do texto, dando o efeito. */
-a:hover, .selecionado a{
+a:hover, a{
     background-position: right bottom;
     background-color: #f99200; /* Caso a imagem não carregue, o efeito de cor ao passar o mouse em cima acontecerá por um background-color. */
+    color: #fff;
+}
+
+/* 
+A configuração abaixo funciona da seguinte forma, um determinado link que estiver dentro da determinada herança de classes e ids, terá uma formatação.
+O link <a> que está dentro da classe .home, que está dentro do id navegacao e que está no body com id home, ao clicar no link, terá o efeito de css configurado. 
+*/
+
+#home #navegacao .home a, 
+#sobre #navegacao .sobre a, 
+#servicos #navegacao .servicos a, 
+#noticias #navegacao .noticias a, 
+#contato #navegacao .contato a{
+    background-position: right bottom;
+    background-color: #f99200; /* Caso a imagem não carregue, o efeito de cor ao estar na página em si, acontecerá por um background-color. */
     color: #fff;
 }

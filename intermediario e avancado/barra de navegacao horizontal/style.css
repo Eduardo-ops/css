@@ -12,20 +12,46 @@ ul{
 }
 
 ul li {
-    /* display: inline-block; Também da certo usar o mesmo, porém foi realizado em float left para evitar problema no browser que pode gerar.*/
+    /* 
+    display: inline-block; Também da certo usar o mesmo, porém foi realizado em float left para evitar problema no browser que pode gerar.
+    */
     float: left;
 }
 
 ul a{
-    border-left: 1px solid gray;
+    border-left: 2px solid gray;
     display: block;
     text-decoration: none;
+    font-weight: bold;
     color: #fff;
     padding: 0 2em;
     line-height: 2em;
 }
 
 a:hover{
-    background: #fff;
-    color: black;
+    background: #44cade;
+    font-weight: bold;
+    color: #085662;
+}
+
+/* 
+Removendo a borda esquerda do primeiro link 
+*/
+.primeiro{
+    border-left: none;
+}
+
+/* 
+Adicionado efeito de acesso a uma página, ficando com estilo alterado no dterminado link que destina a página
+e permanecendo nela. 
+*/
+#home #navegacao .home a,
+#contato #navegacao .contato a,
+#noticias #navegacao .noticias a,
+#servicos #navegacao .servicos a,
+#sobre #navegacao .sobre a
+{
+    background: #44cade;
+    font-weight: bold;
+    color: #085662;
 }

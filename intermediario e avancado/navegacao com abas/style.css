@@ -1,0 +1,39 @@
+body{
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+/* 
+Zerando informações de lista 
+*/
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+ul li{
+    border: 1px solid #696969;
+    float: left;
+    background: #00CD00;
+    /* Border radius com determinadas especificações, dão a lógica do formato aba dos itens */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+li a{
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #FF4040;
+}
+
+ul #atual{
+    background: #6495ED;
+}

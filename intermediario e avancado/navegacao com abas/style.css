@@ -19,6 +19,7 @@ ul li{
     /* Border radius com determinadas especificações, dão a lógica do formato aba dos itens */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    margin-bottom: 10px;
 }
 
 li a{
@@ -36,4 +37,8 @@ a:hover{
 
 ul #atual{
     background: #6495ED;
+}
+
+p{
+    clear: both;
 }

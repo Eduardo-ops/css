@@ -12,16 +12,34 @@ ul{
     width: 720px;
 }
 
+/* 
+Lógica para navegação em abas,
+Usando imagens feitas em photoshop, utilizaremos elas com as determinadas,
+coordenadas no modo de fazer elas aparecer na tela, dando assim, o efeito do bloco com,
+pontas arredondadas.
+Também sendo possível realizar tal efeito com border-radius como é mostrado abvaixo no,
+código comentado.
+*/
 ul li{
-    border: 1px solid #696969;
+    /* border: 1px solid #696969; */
     float: left;
     background: #00CD00;
+
+    background: url(../imagens/aba-direita.png) no-repeat top right ;
+
     /* Border radius com determinadas especificações, dão a lógica do formato aba dos itens */
+    /* 
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-right-radius: 10px; 
+    */
+    
     margin-bottom: 10px;
 }
 
+/* 
+Dando continuidade na lógica, com imagens configuradas,
+para aplicar o efeito do lado esquerdo da aba. 
+*/
 li a{
     display: block;
     padding: 0 2em;
@@ -29,14 +47,25 @@ li a{
     text-decoration: none;
     color: #ffff;
     font-weight: bold;
+    background: url(../imagens/aba-esquerda.png) no-repeat top left;
 }
 
 a:hover{
     color: #FF4040;
 }
 
+/* 
+As duas classes abaixo é para o efeito de estado na aba, ou seja,
+quando estivermos acesso em cada conteúdo de cada aba, a aba terá uma mudança em sua cor,
+também usado imagens para o efeito. 
+*/
 ul #atual{
-    background: #6495ED;
+    /* background: #6495ED; */
+    background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a{
+    background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
 }
 
 p{

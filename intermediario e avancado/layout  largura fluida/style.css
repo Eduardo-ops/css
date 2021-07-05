@@ -18,8 +18,10 @@ em sua posições corretas.
     problema nas posições dos elementos. */
     min-width: 600px;
 
-    /* Ao contrário do exemplo acima, aqui definimos o máximo que o layout pode chegar a essa proporção. */
+    /* 
+    Ao contrário do exemplo acima, aqui definimos o máximo que o layout pode chegar a essa proporção.
     max-width: 3000px;
+    */
 }
 
 #marca{

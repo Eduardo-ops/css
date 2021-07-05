@@ -22,11 +22,17 @@ em sua posições corretas.
     max-width: 3000px;
 }
 
-#marca{
-    height: 100px;
-    background: #9e9e9e;
+/* 
+A ideia é colocar uma imagen que tenha um conteúdo mais no seu centro,
+assim, adicionaremos a imagem centralizada na div e um background da mesma cor que o fundo
+da imagem para dar o efeito.
+*/
+#header{
+    height: 200px;
+    background: black url(../imagens/imagem-cabecalho.jpg) no-repeat center;
     text-align: center;
-    line-height: 100px;
+    line-height: 200px;
+    color: white;
 }
 
 #conteudo{
@@ -34,9 +40,19 @@ em sua posições corretas.
     float: right;
 }
 
+/* 
+O elemento img que tiver a determinada classe abaixo, aplicará na imagem 
+um comprimento de 90% da div que estiver e com um padding de 2% como distânciamento.
+*/
+img.imagem-conteudo{
+    width: 90%;
+    padding: 2%;
+}
+
 #conteudo-primario{
     width: 64%;
     float: left;
+    max-width: 1280px;
 }
 
 #conteudo-secundario{

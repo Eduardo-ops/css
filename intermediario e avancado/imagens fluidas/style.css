@@ -1,0 +1,75 @@
+body{
+    font-family: 'Trebuchet MS',Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+/* 
+Utilizaremos porcentagem ao invés de pixel para gerar o efeito fluído dos sites,
+assim, conforme for reduzido tamanho da tela, os elementos se encaixam e maten
+em sua posições corretas. 
+*/
+
+#container{
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+
+    /* Definimos até quando o layout pode funcionar sua fluídez sem gerar 
+    problema nas posições dos elementos. */
+    min-width: 600px;
+
+    /* Ao contrário do exemplo acima, aqui definimos o máximo que o layout pode chegar a essa proporção. */
+    max-width: 3000px;
+}
+
+#marca{
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+#conteudo{
+    width: 75%;
+    float: right;
+}
+
+#conteudo-primario{
+    width: 64%;
+    float: left;
+}
+
+#conteudo-secundario{
+    width: 33%;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-secundario h2,
+#conteudo-secundario p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao{
+    width: 23%;
+    float: left;
+    padding-top: 29px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#navegacao ul{
+    list-style: none;
+}
+
+#navegacao a{
+    text-decoration: none;
+}
+
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+    text-align: center;
+}

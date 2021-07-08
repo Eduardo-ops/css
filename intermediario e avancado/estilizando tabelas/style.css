@@ -1,6 +1,8 @@
 
 table{
-    width: 600px;
+    width: 30%;
+
+    /* Juntando todas as bordas uma com a outra */
     border-collapse: collapse;
 }
 

@@ -1,0 +1,46 @@
+
+table{
+    width: 600px;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+}
+
+th{
+    /* Deixando todas as letras de <th> maiúscula. */
+    text-transform: uppercase;
+
+    /* Aplicando cor em determinadas bordas de <th> */
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+
+    /* Alinhando o texto de <th> */
+    text-align: left;
+
+    /* Determinando tamanho das letras */
+    font-size: 90%;
+
+    /* Dando espaçamento entre letras */
+    letter-spacing: 0.1em;
+}
+
+/* Definindo cor somente para as <tr> que tiver a classe altera-cor */
+tr.altera-cor{
+    background-color: #efefef;
+}
+
+/* 
+Alternando a cor de fundo e de letras ao passar o mouse em cima de cada <tr> 
+com a classe altera-cor 
+*/
+tr.altera-cor:hover{
+    background-color: #87CEFA;
+    color: cornsilk;
+}
+
+/* Alinhando textos dos campos de preço a direita */
+.numero{
+    text-align: right;
+}

@@ -9,10 +9,18 @@ assim, conforme for reduzido tamanho da tela, os elementos se encaixam e maten
 em sua posições corretas. 
 */
 
+/* 
+Lógica para aplicar o efeito de coluna falsa,
+acrescentando uma imagem em background com 
+suas configurações.
+
+É utilizado geralmente em layouts fixos,
+pois nos liquidos(fluídos) pode causar bugs.
+*/
 #container{
-    width: 90%;
+    width: 960px;
     margin: 0 auto;
-    background: #fff;
+    background: #fff url(../imagens/coluna.png) repeat-y left;
 
     /* Definimos até quando o layout pode funcionar sua fluídez sem gerar 
     problema nas posições dos elementos. */
@@ -72,7 +80,6 @@ img.imagem-conteudo{
     float: left;
     padding-top: 29px;
     padding-bottom: 20px;
-    background: #d1d1d1;
 }
 
 #navegacao ul{

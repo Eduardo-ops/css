@@ -1,0 +1,40 @@
+body{
+    font-family: 'Trebuchet MS',Helvetica, sans-serif;;
+}
+
+#formulario{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 3000px;
+}
+
+fieldset{
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display: block;
+
+    /* Alterando o cursor do mouse ao passar em cima de casa label */
+    cursor:pointer;
+}
+
+/* 
+Somente os <input> do tipo texto terão a formatação aplicada 
+Somente navegadores mais modernos tem esse suporte de formatação.
+Caso isso não seja apropriado para tal aplicação, utilize classes.
+*/
+input[type="text"]{
+    width: 20em;
+}
+
+textarea{
+    width: 20em;
+    height: 10em;
+}

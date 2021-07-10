@@ -21,7 +21,7 @@ legend{
 label{
     display: block;
 
-    /* Alterando o cursor do mouse ao passar em cima de casa label */
+    /* Alterando o cursor do mouse ao passar em cima de cada label */
     cursor:pointer;
 }
 

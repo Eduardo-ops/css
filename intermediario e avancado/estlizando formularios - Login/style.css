@@ -1,0 +1,59 @@
+body{
+    font-family: "trebuchet MS", Helvetica, sans-serif;
+    background: #36648B;
+}
+
+/* Tamanho e fontes do container principal */
+#container{
+    width: 600px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 150px;
+    text-align: center;
+}
+
+/* Tamanho e posição da imagem dentro do container */
+#container img{
+    width: 220px;
+    height: 220px;
+    margin-top: -110px;
+    margin-bottom: 30px;
+}
+
+/* Posição, tamanho e configuração de ícone nos inputs */
+input {
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+/* Icone correspondente ao camnpo email */
+input.email{
+    background-image: url(../imagens/icone-usuario.png);
+}
+
+/* Icone correspondente ao camnpo senha */
+input.senha{
+    background-image: url(../imagens/icone-cadeado.png);
+}
+
+/* Input com background degrade e formatações */
+input.submit{
+    color: #fff;
+    background-color: #f79300;
+    border: 1px solid #db7d00;
+    padding-left: 20px;
+    height: 40px;
+    width: 88%;
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+}

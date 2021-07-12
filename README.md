@@ -12,3 +12,6 @@ Barra de navegação horizontal com página marcada ao acessar.
 Barra de navegação horizontal com abas, página marcada ao acessar.
 ![image](https://user-images.githubusercontent.com/54048170/124337603-c6eeda00-db79-11eb-8281-c264f1f2da30.png)
 
+Tela de login configurada com formulário estilizado.
+![image](https://user-images.githubusercontent.com/54048170/125341994-a6b5dc80-e32a-11eb-98c1-800fe606064f.png)
+

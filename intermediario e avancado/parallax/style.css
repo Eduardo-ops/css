@@ -1,0 +1,48 @@
+/* CONFIGURAÇÃO PADRÃO */
+
+/* 
+Todo body e o html
+Deve-se conter o atributo de height em 100%, fazendo
+da lógica para o efeito parallax. 
+*/
+body,html{
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #777;
+    height: 100%;
+}
+
+/* Elemento com classe "conteudo" */
+.conteudo{
+    color: #777;
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+/* Elemento <h3> estilizado */
+h3{
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+
+/* EFEITO PARALAX */
+
+/* Padronização dos elementos com essas classes */
+.caixa-1, .caixa-2{
+    border: 1px solid blue;
+    height: 100%;
+}
+
+/* Elemento com classe "caixa-1" */
+.caixa-1{
+    background-image: url(../imagens/imagem1.jpg);
+    height: 853px;
+}
+
+/* Elemento com classe "caixa-2" */
+.caixa-2{
+    background-image: url(../imagens/imagem2.jpg);
+    height: 853px;
+}

@@ -1,0 +1,12 @@
+
+/* Padronizando fontes externas para websites. */
+@font-face {
+    font-family: "Anja Eliane";
+    src: url(AnjaEliane.woff);
+}
+
+/* Elemento h1 estilizado */
+h1{
+    font-size: 6em;
+    font-family: "Anja Eliane";
+}

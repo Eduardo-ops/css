@@ -1,13 +1,24 @@
 
+/* Elemento com classe "caixa" */
 .caixa{
-    background: #dedede url(../imagens/topo.png) no-repeat left top;
+    width: 400px;
+    background: /* #dedede */ url(../imagens/fundo-arredondamento.png) repeat-y;
 }
 
-.caixa p {
-    background: url(../imagens/baixo.png) no-repeat left bottom;
-    padding: 0px 20px 20 20px;
-}
-
+/* Elemento <h2> dentro de um elemento com classe "caixa" */
 .caixa h2{
+    background: url(../imagens/topo2.png) no-repeat left top;
     padding: 10px 20px 0 20px;
+}
+
+/* Elemento <p> dentro de um elemento com classe "caixa" */
+.caixa p{
+    padding: 0 20px;
+}
+
+/* Elemento com classe "ultimo" dentro de outro elemento com classe "caixa" */
+.caixa .ultimo{
+    background: url(../imagens/baixo2.png) no-repeat left bottom;
+    width: 400px;
+    height: 10px;
 }

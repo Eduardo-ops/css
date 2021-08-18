@@ -1,11 +1,21 @@
 #conteudo{
     background: #dcdcdc;
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     /* Tornando um container flexível */
     display: flex;
 
     /* Define a proporção de espaço ocupado por um item */
     flex-grow: 0;
+
+    /* Define a capacidade de redução de temanho do item, efeito contrário de flex-grow*/
+    flex-shrink: 1;
+
+    /* Indica o tamanho inicial do flex item antes da distribuição do espaço restante.
+    auto = geralmente vem com o padrão que nós mesmo definimos
+    */
+    flex-basis: auto;
 }
 
 .item{
@@ -23,6 +33,14 @@
 
 .item2{
     flex-grow: 2;
+}
+
+.item3{
+    background: white;
+    border: 1px solid grey;
+    height: 100px;
+    margin: 10px;
+    flex-shrink: 5;
 }
 
 .ordem1{

@@ -1,0 +1,35 @@
+#conteudo{
+    background: #dcdcdc;
+    width: 720px;
+    height: 400px;
+    /* Tornando um container flexível */
+    display: flex;
+
+    /* A propriedade define como os itens(flexitens) são posicionados em um container flexível(FlexBox),
+    definindo o eixo principal e a direção(normal ou invertido) */
+    /* row | row-reverse | column | column-reverse */
+    flex-direction: row;
+
+   /*  A propriedade define se os itens flexíveis são obrigados a ficarem na mesma linha ou se podem
+    ser quebradas em varias linhas. Sendo assim, define a direção em que as linhas são empilhadas.*/
+    /* nowrap | wrap | wrap-reverse */
+    flex-wrap: nowrap;
+
+    /* Propriedade define como o navegador vai distribuir o espaço entre ao redor dos itens de conteúdo
+    longo do eixo principal de um container flexivel e do eixo embutido de um container de grade. */
+    /* flex-start | flex-end | center | space-between | space-around */
+    justify-content: space-around;
+
+    /* Propriedade que define a distribuição entre e ao redor dos itens do conteúdo do eixo transversal de uma 
+    flexbox, ou do eixo de bloco de uma grid */
+    /* stretch | center | flex-start | flex-end | baseline */
+    align-items: center;
+}
+
+.item{
+    background: white;
+    border: 1px solid grey;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}

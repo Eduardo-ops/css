@@ -1,3 +1,5 @@
+
+/* Zerando padrões de formatações em determinados elementos */
 body, ul, li, p{
     margin: 0;
     padding: 0;
@@ -6,11 +8,13 @@ body, ul, li, p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Elemento link <a> estilizado */
 a{
     text-decoration: none;
     color: #fff;
 }
 
+/* Elemento link <h1> estilizado */
 h1{
     text-align: center;
     margin-top: 100px;
@@ -18,6 +22,7 @@ h1{
 
 /* ---------- HEADER ---------- */
 
+/* Elemento com classe "header" */
 .header{
     background: #1d1e20;
     display: flex;
@@ -27,15 +32,42 @@ h1{
     align-items: center;
 }
 
+/* Elemento com classe "menu" */
 .menu{
     display: flex;
 }
 
+/* Elemento <li> descendente de um elemento com classe "menu" */
 .menu li{
     margin: 10px;
 }
 
+/* Elemento <a> descendente de elemento <li> que é descendente de elemento com classe "menu" */
 .menu li a{
     display: block;
     padding: 10px;
+}
+
+/* ---------- CONTEÚDO ---------- */
+
+/* Elemento <img> estilizado */
+img{
+    border-radius: 10px;
+    max-width: 100%;
+    display: block;
+}
+
+/* Elemento com classe "flex" */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Elemento <div> dentro de elemento com classe "flex" */
+.flex > div{
+    flex: 1 1 300px;
+    margin: 20px;
+    text-align: center;
 }

@@ -60,14 +60,17 @@ img{
 /* Elemento com classe "flex" */
 .flex{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Quebrando linhas aos elementos chegar em determinado espaço */
     margin: 0 auto;
     max-width: 800px;
 }
 
 /* Elemento <div> dentro de elemento com classe "flex" */
 .flex > div{
-    flex: 1 1 300px;
+    /* flex: 1 1 300px; */
+    flex-grow: 1; /* Definindo a proporção de espaço ocupado por um iten */
+    flex-shrink: 1; /* Definindo a capacidade de redução de tamanho do item */
+    flex-basis: 200px; /*  Indicando o tamanho inicial do item antes de qualquer distribuição de espaço. */
     margin: 20px;
     text-align: center;
 }
